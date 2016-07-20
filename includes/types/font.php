@@ -113,7 +113,7 @@ abstract class Icon_Picker_Type_Font extends Icon_Picker_Type {
 
 		$register = true;
 		$deps     = false;
-		$styles   = wp_styles();
+		$styles   = new WP_Styles();
 
 		/**
 		 * When the stylesheet ID of an icon type is already registered,
