@@ -32,14 +32,14 @@ You can use the `icon_picker_icon_type_stylesheet_uri` filter, eg:
  * @return string
  */
 function myprefix_font_awesome_css_from_cdn( $stylesheet_uri, $icon_type_id, $icon_type ) {
-  if ( 'fa' === $icon_type_id ) {
-    $stylesheet_uri = sprintf(
-      'https://maxcdn.bootstrapcdn.com/font-awesome/%s/css/font-awesome.min.css',
-      $icon_type->version
-    );
-  }
+	if ( 'fa' === $icon_type_id ) {
+		$stylesheet_uri = sprintf(
+			'https://maxcdn.bootstrapcdn.com/font-awesome/%s/css/font-awesome.min.css',
+			$icon_type->version
+		);
+	}
 
-  return $stylesheet_uri;
+	return $stylesheet_uri;
 }
 add_filter( 'icon_picker_icon_type_stylesheet_uri', 'myprefix_font_awesome_css_from_cdn', 10, 3 );
 `
