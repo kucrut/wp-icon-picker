@@ -4,7 +4,7 @@ Donate Link: http://kucrut.org/#coffee
 Tags: icons, image, svg
 Requires at least: 4.3
 Tested up to: 4.7.2
-Stable tag: 0.5.0
+Stable tag: 0.5.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,9 @@ add_filter( 'icon_picker_icon_type_stylesheet_uri', 'myprefix_font_awesome_css_f
 `
 
 == Changelog ==
+= 0.5.1 =
+* Add support for [Academicons](http://jpswalsh.github.io/academicons/) v1.8.0.
+
 = 0.5.0 =
 * Update Font Awesome to 4.7.0.
 * Switch to Webpack.

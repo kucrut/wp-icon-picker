@@ -10,7 +10,7 @@ module.exports = function( grunt ) {
 		uglify: {
 			all: {
 				files: {
-					'js/icon-picker.min.js': ['js/icon-picker.js']
+					'js/icon-picker.min.js': [ 'js/icon-picker.js' ]
 				}
 			}
 		},
@@ -18,7 +18,7 @@ module.exports = function( grunt ) {
 			main: {
 				expand: true,
 				cwd: 'css/',
-				src: ['icon-picker.css'],
+				src: [ 'icon-picker.css' ],
 				dest: 'css/',
 				ext: '.min.css'
 			},
@@ -35,7 +35,7 @@ module.exports = function( grunt ) {
 				options: {
 					mainFile: 'icon-picker.php',
 					type: 'wp-plugin',
-					exclude: ['tests']
+					exclude: [ 'tests' ]
 				}
 			}
 		}
@@ -55,7 +55,7 @@ module.exports = function( grunt ) {
 		}, this.async() );
 	});
 
-	grunt.registerTask( 'i18n', ['makepot']);
+	grunt.registerTask( 'i18n', [ 'makepot' ]);
 	grunt.registerTask( 'compress', [ 'cssmin', 'uglify' ]);
 	grunt.registerTask( 'default', [ 'i18n', 'compress' ]);
 };
